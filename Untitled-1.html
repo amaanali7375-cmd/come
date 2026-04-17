@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Rajpoot Marriage Bureau Center</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0;}
+body{font-family:Arial,sans-serif;background:#f4f4f4;padding:20px;}
+.wrap{max-width:700px;margin:0 auto;}
+.header{text-align:center;background:linear-gradient(135deg,#2e7d32,#66bb6a);color:white;padding:30px;border-radius:12px;margin-bottom:20px;}
+.header h1{font-size:24px;margin-bottom:6px;}
+.header p{font-size:13px;opacity:0.85;}
+.section{background:white;border-radius:12px;padding:20px;margin-bottom:16px;box-shadow:0 2px 8px rgba(0,0,0,0.08);}
+.section-title{font-size:13px;font-weight:700;color:#2e7d32;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:16px;display:flex;align-items:center;gap:8px;border-bottom:2px solid #e8f5e9;padding-bottom:8px;}
+.num{background:#2e7d32;color:white;width:24px;height:24px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;flex-shrink:0;}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;}
+.grid.single{grid-template-columns:1fr;}
+.field{display:flex;flex-direction:column;gap:5px;}
+.field label{font-size:12px;color:#555;font-weight:600;}
+.field input,.field select,.field textarea{font-family:Arial,sans-serif;font-size:14px;color:#333;background:#f9f9f9;border:1.5px solid #ddd;border-radius:8px;padding:9px 12px;outline:none;transition:border-color 0.2s;}
+.field input:focus,.field select:focus,.field textarea:focus{border-color:#2e7d32;background:#fff;}
+.field textarea{resize:vertical;min-height:75px;}
+.check-group{display:flex;flex-direction:column;gap:9px;}
+.check-item{display:flex;align-items:center;gap:9px;font-size:14px;color:#333;cursor:pointer;}
+.check-item input{width:16px;height:16px;accent-color:#2e7d32;cursor:pointer;}
+.btn-row{display:flex;gap:12px;margin-top:20px;}
+.btn{flex:1;padding:13px;border-radius:10px;font-size:14px;font-weight:700;cursor:pointer;border:none;transition:opacity 0.2s;}
+.btn.print{background:#e8f5e9;color:#2e7d32;}
+.btn.submit{background:#2e7d32;color:white;}
+.btn:hover{opacity:0.85;}
+@media(max-width:500px){.grid{grid-template-columns:1fr;}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="header">
+    <h1>&#127968; Rajpoot Marriage Bureau Center</h1>
+    <p>Please fill in all sections carefully and completely</p>
+  </div>
+
+  <div class="section">
+    <div class="section-title"><span class="num">1</span> Personal Information</div>
+    <div class="grid">
+      <div class="field"><label>Gender</label><select><option value="">Select</option><option>Male</option><option>Female</option></select></div>
+      <div class="field"><label>Full Name</label><input type="text" placeholder="Enter full name"/></div>
+      <div class="field"><label>Age</label><input type="number" placeholder="e.g. 25"/></div>
+      <div class="field"><label>Height</label><input type="text" placeholder="e.g. 5'6&quot;"/></div>
+      <div class="field"><label>Cast</label><input type="text" placeholder="Enter cast"/></div>
+      <div class="field"><label>Disability</label><input type="text" placeholder="None / specify"/></div>
+      <div class="field"><label>Nationality</label><input type="text" placeholder="e.g. Pakistani"/></div>
+      <div class="field"><label>Language</label><input type="text" placeholder="e.g. Urdu, Punjabi"/></div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title"><span class="num">2</span> Education Details</div>
+    <div class="grid single">
+      <div class="field"><label>Qualification (tick all that apply)</label>
+        <div class="check-group">
+          <label class="check-item"><input type="checkbox"/> Matric</label>
+          <label class="check-item"><input type="checkbox"/> Intermediate / FA / FSc</label>
+          <label class="check-item"><input type="checkbox"/> Bachelor's (BA / BSc / BCS)</label>
+          <label class="check-item"><input type="checkbox"/> Master's (MA / MSc / MBA)</label>
+          <label class="check-item"><input type="checkbox"/> PhD</label>
+          <label class="check-item"><input type="checkbox"/> Hafiz-e-Quran</label>
+          <label class="check-item"><input type="checkbox"/> Religious Education (Aalim/Aalima)</label>
+          <label class="check-item"><input type="checkbox"/> IT / Technical Diploma</label>
+          <label class="check-item"><input type="checkbox"/> Other</label>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title"><span class="num">3</span> Job Holder / Student</div>
+    <div class="grid single">
+      <div class="field">
+        <div class="check-group">
+          <label class="check-item"><input type="radio" name="job"/> Job Holder</label>
+          <label class="check-item"><input type="radio" name="job"/> Student</label>
+          <label class="check-item"><input type="radio" name="job"/> Self-Employed / Business</label>
+          <label class="check-item"><input type="radio" name="job"/> Housewife</label>
+          <label class="check-item"><input type="radio" name="job"/> Not Employed</label>
+        </div>
+      </div>
+      <div class="field" style="margin-top:8px"><label>Field / Designation (if employed)</label><input type="text" placeholder="e.g. Software Engineer, Teacher"/></div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title"><span class="num">4</span> Marital Status</div>
+    <div class="grid single">
+      <div class="field">
+        <div class="check-group">
+          <label class="check-item"><input type="radio" name="marital"/> Single / Never Married</label>
+          <label class="check-item"><input type="radio" name="marital"/> Divorced</label>
+          <label class="check-item"><input type="radio" name="marital"/> Widow / Widower</label>
+          <label class="check-item"><input type="radio" name="marital"/> Separated</label>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title"><span class="num">5</span> Religion Details</div>
+    <div class="grid">
+      <div class="field"><label>Religion</label><select><option value="">Select</option><option>Islam</option><option>Other</option></select></div>
+      <div class="field"><label>Maslak</label><select><option value="">Select</option><option>Sunni</option><option>Barelvi</option><option>Deobandi</option><option>Ahl-e-Hadith</option><option>Shia</option><option>Other</option></select></div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title"><span class="num">6</span> Property Details</div>
+    <div class="grid">
+      <div class="field"><label>House Size</label><input type="text" placeholder="e.g. 5 Marla, 10 Marla"/></div>
+      <div class="field"><label>House Location</label><input type="text" placeholder="City / Area"/></div>
+      <div class="field"><label>House Ownership</label><select><option value="">Select</option><option>Owned</option><option>Rented</option><option>Family Property</option></select></div>
+      <div class="field"><label>Market / Business</label><input type="text" placeholder="Business details"/></div>
+      <div class="field"><label>Agricultural Land</label><input type="text" placeholder="e.g. 2 Acres"/></div>
+      <div class="field"><label>Other Assets</label><input type="text" placeholder="Vehicle, etc."/></div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title"><span class="num">7</span> Family Details</div>
+    <div class="grid">
+      <div class="field"><label>Father's Occupation</label><input type="text" placeholder="e.g. Business, Govt. Employee"/></div>
+      <div class="field"><label>Mother</label><select><option value="">Select</option><option>Alive</option><option>Deceased</option></select></div>
+      <div class="field"><label>Number of Brothers</label><input type="number" placeholder="0" min="0"/></div>
+      <div class="field"><label>Number of Sisters</label><input type="number" placeholder="0" min="0"/></div>
+      <div class="field"><label>Married Siblings</label><input type="number" placeholder="0" min="0"/></div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title"><span class="num">8</span> Address</div>
+    <div class="grid">
+      <div class="field"><label>Current City</label><input type="text" placeholder="e.g. Lahore"/></div>
+      <div class="field"><label>Home Town</label><input type="text" placeholder="e.g. Gujranwala"/></div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title"><span class="num">9</span> Your Demands / Requirements</div>
+    <div class="grid">
+      <div class="field"><label>Required Qualification</label><input type="text" placeholder="e.g. IT Field / Any Degree"/></div>
+      <div class="field"><label>Cast Preference</label><input type="text" placeholder="e.g. Same / Any"/></div>
+      <div class="field"><label>Required Age Range</label><input type="text" placeholder="e.g. 25-35"/></div>
+      <div class="field"><label>Required Height</label><input type="text" placeholder="e.g. 5'5&quot; and above"/></div>
+      <div class="field"><label>Residence Preference</label><input type="text" placeholder="e.g. Same city / Any"/></div>
+      <div class="field"><label>Language Preference</label><input type="text" placeholder="e.g. Urdu speaking"/></div>
+      <div class="field"><label>Required Maslak</label><input type="text" placeholder="e.g. Sunni / Any"/></div>
+      <div class="field single"><label>Other Requirements</label><textarea placeholder="Must be independent, small family, etc."></textarea></div>
+    </div>
+  </div>
+
+  <div class="btn-row">
+    <button class="btn print" onclick="window.print()">&#128438; Print / Save as PDF</button>
+  </div>
+</div>
+</body>
+</html>
